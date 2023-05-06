@@ -1,7 +1,6 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Aside } from "../Aside";
 import { Header } from "../Header";
-import { Comments } from "../Comments";
 
 export function Div({ objData, ButtonData, userData }) {
   return (
@@ -19,9 +18,9 @@ export function Div({ objData, ButtonData, userData }) {
                     <span>
                       <h3>{user.name}</h3>
                       <p>{user.describe}</p>
-                      <NavLink path="/Comments" element={<Comments/>}>
+                      <Link to={"/comments"}>
                         <button className="ubtn">{user.button}</button>
-                      </NavLink>
+                      </Link>
                     </span>
                   </div>
                   <div>

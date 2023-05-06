@@ -3,6 +3,7 @@ import React from "react";
 import { Div } from "./companent/Div";
 import { NotFound } from "./companent/NotFound";
 import { Route, Routes } from "react-router-dom";
+import { Comments } from "./companent/Comments";
 
 
 
@@ -93,6 +94,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Div objData={objData} ButtonData={ButtonData} userData={userData}></Div>}></Route>
       <Route path="*" element={<NotFound/>} />
+      <Route path="/comments" element={<Comments/>}></Route>
     </Routes>
   );
 }

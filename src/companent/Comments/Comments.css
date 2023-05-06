@@ -1,0 +1,15 @@
+.liC{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    border: 3px solid red;
+}
+
+
+.ulC{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+}
