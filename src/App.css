@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f2f2f2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header__div {
+  padding: 28px;
+  border: 10px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+aside {
   display: flex;
   flex-direction: column;
+  margin-right: 30px;
+  gap: 24px;
+}
+
+.aside__header {
+  padding: 62px 77px 24px 24px;
+  background: radial-gradient(
+    128.88% 128.88% at 103.9% -10.39%,
+    #e84d70 0%,
+    #a337f6 53.09%,
+    #28a7ed 100%
+  );
+  border-radius: 10px;
+}
+
+.aside__header h3 {
+  font-family: "Jost";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: -0.25px;
+  color: #ffffff;
+}
+
+.aside__header p {
+  font-family: "Jost";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+button {
+  cursor: grab;
+  
+  padding: 6px 15px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661e6;
+  background: #f2f4ff;
+  border-radius: 10px;
+  border: none;
+}
+
+.ubtn{
+  width: 111px;
+}
+
+.nbtn {
+  padding: 14px 9px 8px;
+}
+
+.header__btns {
+  display: flex;
+  background: #ffffff;
+  max-width: 255px;
+  padding: 24px 50px 24px 24px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ubtn:hover {
+  background: #4661e6;
+  color: #ffffff;
+}
+
+.list {
+  padding: 19px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.list__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  background-color: #62bcfa;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.header__text {
+  display: flex;
+  gap: 10px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
