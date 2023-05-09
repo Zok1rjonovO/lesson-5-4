@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Comments.css"
 
 export function Comments({ userData }) {
@@ -8,13 +9,14 @@ export function Comments({ userData }) {
 
   useEffect(() => {
     axios
-      .get("https://jsonplaceholder.typicode.com/comments")
+      .get("https://jsonplaceholder.typicode.com/comments?postId=1")
       .then((json) => setUserData(json.data));
   }, []);
 
   return (
     <>
       <ul className="ulC">
+      <Link to={"/"}>go back</Link>
         {Data.map((user, index) => (
           <li className="liC" key={index}>
             <h1>{user.name}</h1>

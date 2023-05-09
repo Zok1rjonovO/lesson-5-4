@@ -1,0 +1,70 @@
+section {
+  padding: 10px 42px 40px;
+}
+
+.aslect {
+  padding: 13px 385px 13px 24px;
+  color: #3a4374;
+  background-color: #f7f8fd;
+  border: none;
+}
+
+.aslect select {
+  border: none;
+  color: #3a4374;
+  background-color: #f7f8fd;
+}
+
+h1 {
+  font-family: "Jost";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.333333px;
+  color: #3a4374;
+}
+
+h3 {
+  font-family: "Jost";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.194444px;
+  color: #3a4374;
+}
+
+p {
+  font-family: "Jost";
+  font-size: 14px;
+  line-height: 20px;
+  color: #647196;
+}
+
+input {
+  width: 456px;
+  height: 48px;
+  background: #f7f8fd;
+  border: none;
+  border-radius: 5px;
+}
+
+input:last-child {
+  width: 456px;
+  height: 96px;
+}
+
+.sbtn,
+.abtn {
+  background: #3a4374;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-family: "Jost";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f2f4fe;
+}
+
+.abtn {
+  background-color: #ad1fea;
+}

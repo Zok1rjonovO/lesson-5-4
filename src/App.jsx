@@ -4,10 +4,10 @@ import { Div } from "./companent/Div";
 import { NotFound } from "./companent/NotFound";
 import { Route, Routes } from "react-router-dom";
 import { Comments } from "./companent/Comments";
-
-
+import { Feedback } from "./companent/Feedback";
 
 function App() {
+  
   let objData = [
     {
       name: "Add tags for solutions",
@@ -91,11 +91,14 @@ function App() {
   ];
 
   return (
+    <>
     <Routes>
       <Route path="/" element={<Div objData={objData} ButtonData={ButtonData} userData={userData}></Div>}></Route>
       <Route path="*" element={<NotFound/>} />
       <Route path="/comments" element={<Comments/>}></Route>
+      <Route path="/feedback" element={<Feedback ButtonData={ButtonData}/>}></Route>
     </Routes>
+    </>
   );
 }
 
