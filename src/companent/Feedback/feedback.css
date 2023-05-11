@@ -1,9 +1,21 @@
+:root {
+  --main-bg-color: #e2b714;
+  --main-color: #323437;
+  --body-color: #646669;
+}
+
 section {
   padding: 10px 42px 40px;
 }
 
+.card {
+  display: grid;
+  place-items: center;
+  background-color: var(--main-color);
+}
+
 .aslect {
-  padding: 13px 385px 13px 24px;
+  padding: 13px 330px 13px 24px;
   color: #3a4374;
   background-color: #f7f8fd;
   border: none;
@@ -21,7 +33,6 @@ h1 {
   font-size: 24px;
   line-height: 35px;
   letter-spacing: -0.333333px;
-  color: #3a4374;
 }
 
 h3 {
@@ -30,14 +41,12 @@ h3 {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.194444px;
-  color: #3a4374;
 }
 
 p {
   font-family: "Jost";
   font-size: 14px;
   line-height: 20px;
-  color: #647196;
 }
 
 input {
@@ -67,4 +76,17 @@ input:last-child {
 
 .abtn {
   background-color: #ad1fea;
+}
+
+a {
+  color: var(--main-bg-color);
+}
+
+.link {
+  display: grid;
+  place-items: center;
+  width: 75px;
+  height: 35px;
+  background-color: #323437;
+  border-radius: 10px;
 }

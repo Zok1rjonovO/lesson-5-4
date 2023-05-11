@@ -1,29 +1,49 @@
 import axios from "axios";
-import { json, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import "./feedback.css";
 
 export function Feedback({ ButtonData }) {
-  axios.post("https://reqres.in/api/users", {
-    name:"eshmat",
-    job:"5ga1"
-  })
-  .then(function(respons){
-    console.log(respons)
-  })
-  .catch(function(error){
-    console.log(error);
-  });
-  
+  axios
+    .post("https://reqres.in/api/users", {
+      name: "eshmat",
+      job: "5ga1",
+    })
+    .then(function (respons) {
+      console.log(respons);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+  const { t, i18n } = useTranslation();
+
+  const changelanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
   return (
     <>
-      <Link to={"/"}>go back</Link>
+      <div className="link">
+        <Link to={"/"}>go back</Link>
+      </div>
+      <div>
+        <select name="" id="">
+          <option onChange={() => changelanguage("en")} value="en">
+            Uz
+          </option>
+          <option onChange={() => changelanguage("ru")} value="fr">
+            Ru
+          </option>
+        </select>
+      </div>
       <section>
         <div className="card">
           <div>
-            <h1>Create New Feedback</h1>
+            <h1>{t("country")}</h1>
           </div>
           <div>
-            <h3>Feedback Title</h3>
+            <h3>{t("FeedbackTitle")}</h3>
             <p>Add a short, descriptive headline</p>
             <input name="inputname" type="text" />
           </div>

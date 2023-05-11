@@ -8,8 +8,18 @@
   list-style-type: none;
 }
 
+:root{
+  --main-bg-color:#e2b714;
+  --main-color:#323437;
+  --body-color:#646669;
+  --sub-alt-color: #2c2e31;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+  color: var(--main-bg-color);
+}
+
 body {
-  background-color: #f2f2f2;
+  background-color: var(--body-color);
 }
 
 .header {
@@ -21,7 +31,7 @@ body {
   border: 10px;
   display: flex;
   align-items: center;
-  background: #ffffff;
+  background: var(--main-color);
   gap: 30px;
   margin-top: 20px;
 }
@@ -35,12 +45,13 @@ aside {
 
 .aside__header {
   padding: 62px 77px 24px 24px;
-  background: radial-gradient(
+  /* background: radial-gradient(
     128.88% 128.88% at 103.9% -10.39%,
     #e84d70 0%,
     #a337f6 53.09%,
     #28a7ed 100%
-  );
+  ); */
+  background-color: var(--main-color);
   border-radius: 10px;
 }
 
@@ -50,7 +61,7 @@ aside {
   font-size: 20px;
   line-height: 29px;
   letter-spacing: -0.25px;
-  color: #ffffff;
+  color: var(--main-bg-color);
 }
 
 .aside__header p {
@@ -58,7 +69,7 @@ aside {
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
-  color: #ffffff;
+  color: var(--main-bg-color);
   mix-blend-mode: normal;
   opacity: 0.75;
 }
@@ -71,8 +82,8 @@ button {
   font-weight: 600;
   font-size: 13px;
   line-height: 19px;
-  color: #4661e6;
-  background: #f2f4ff;
+  color: var(--main-color);
+  background: var(--main-bg-color);
   border-radius: 10px;
   border: none;
 }
@@ -87,7 +98,7 @@ button {
 
 .header__btns {
   display: flex;
-  background: #ffffff;
+  background: var(--main-color);
   max-width: 255px;
   padding: 24px 50px 24px 24px;
   flex-wrap: wrap;
@@ -95,15 +106,15 @@ button {
 }
 
 .ubtn:hover {
-  background: #4661e6;
-  color: #ffffff;
+  background:  var(--body-color);
+  color:var(--main-bg-color) ;
 }
 
 .list {
   padding: 19px 24px 24px 24px;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: var(--main-color);
 }
 
 .list li {
@@ -124,7 +135,7 @@ button {
 }
 
 .circle {
-  background-color: #62bcfa;
+  background-color: var(--body-color);
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -140,4 +151,9 @@ span{
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+::selection{
+  background-color: var(--main-bg-color) ;
+  color:var(--main-color) ;
 }

@@ -1,8 +1,11 @@
 let Ru = {
-    name: "Адд тагс фор солутионс",
-    describe: "Эасиер то сеарч фор солутионс басед он а спесифис стаск.",
-    button: "Энҳансемент",
-    number: "112",
-    commentnum: "2",
-}
+  country: "Среате Нев Феэдбаск",
+  FeedbackTitle: "Феэдбаск Титле",
+  AddAShortDescriptiveHeadline: "Адд а шорт, дессриптиве ҳеадлине",
+  Category: "Сатегорй",
+  Chooseacategoryforyourfeedback: "Чоосе а сатегорй фор ёур феэдбаск",
+  FeedbackDetail: "Феэдбаск Детаил",
+  text: "Инслуде анй спесифис сомментс он вҳат шоулд бе импровед, аддед,этс.",
+};
+
 export default Ru;

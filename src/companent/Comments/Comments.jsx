@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Comments.css"
+import "./Comments.css";
 
 export function Comments({ userData }) {
   let [Data, setUserData] = useState([]);
@@ -16,11 +16,11 @@ export function Comments({ userData }) {
   return (
     <>
       <ul className="ulC">
-      <Link to={"/"}>go back</Link>
+        <Link to={"/"}>go back</Link>
         {Data.map((user, index) => (
           <li className="liC" key={index}>
-            <h1>{user.name}</h1>
-            <h3>{user.email}</h3>
+            <h1>posted by: <i>{user.name}</i></h1>
+            <h3>email: {user.email}</h3>
             <h3>{user.body}</h3>
           </li>
         ))}

@@ -1,8 +1,11 @@
-let Uz ={
-    name: "Add tags for solutions",
-    describe: "Easier to search for solutions based on a specific stack.",
-    button: "Enhancement",
-    number: "112",
-    commentnum: "2",
-  }
-export default Uz
+let Uz = {
+  country: "Create New Feedback",
+  FeedbackTitle: "Feedback Title",
+  AddAShortDescriptiveHeadline: "Add a short, descriptive headline",
+  Category: "Category",
+  Chooseacategoryforyourfeedback: "Choose a category for your feedback",
+  FeedbackDetail: "Feedback Detail",
+  text:" Include any specific comments on what should be improved, added,etc."
+};
+
+export default Uz;

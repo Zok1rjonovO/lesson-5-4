@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
@@ -29,6 +28,9 @@ export function Header() {
           <button className="btn">+ Add Feedback</button>
         </Link>
       </div>
+      <Link to={"/Login"}>
+        <button>Login</button>
+      </Link>
     </nav>
   );
 }

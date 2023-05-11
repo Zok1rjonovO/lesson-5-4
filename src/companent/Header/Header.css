@@ -1,9 +1,15 @@
+:root{
+  --sub-alt-color: #2c2e31;
+  --main-bg-color:#e2b714;
+  --body-color:#646669;
+}
+
 nav {
   display: flex;
   align-items: center;
-  background-color: #373f68;
+  background-color: var(--sub-alt-color);
   justify-content: space-between;
-  color: #f2f4fe;
+  color: var(--main-bg-color);
   padding: 0 10px;
 }
 
@@ -19,18 +25,18 @@ nav {
   align-items: center;
   width: 194px;
   height: 72px;
-  color: #f2f4fe;
-  background-color: #373f68;
+  color: var(--main-bg-color);
+  background-color: var(--sub-alt-color);
 }
 
 .Sort select {
   border: none;
-  color: #f2f2f2;
-  background-color: #373f68;
+  color: var(--main-bg-color);
+  background-color: var(--sub-alt-color);
 }
 
 .btn{
     padding: 12px 25px;
-    color: #f2f4fe;
-    background-color: #AD1FEA;
+    color: var(--main-bg-color);
+    background-color: var(--body-color);
 }

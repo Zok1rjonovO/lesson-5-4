@@ -5,9 +5,11 @@ import { NotFound } from "./companent/NotFound";
 import { Route, Routes } from "react-router-dom";
 import { Comments } from "./companent/Comments";
 import { Feedback } from "./companent/Feedback";
+import { Admin } from "./companent/Admin";
+import { Login } from "./companent/Login";
+import { Private, Public } from "./Routes";
 
 function App() {
-  
   let objData = [
     {
       name: "Add tags for solutions",
@@ -92,12 +94,18 @@ function App() {
 
   return (
     <>
-    <Routes>
-      <Route path="/" element={<Div objData={objData} ButtonData={ButtonData} userData={userData}></Div>}></Route>
-      <Route path="*" element={<NotFound/>} />
-      <Route path="/comments" element={<Comments/>}></Route>
-      <Route path="/feedback" element={<Feedback ButtonData={ButtonData}/>}></Route>
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Public />}>
+        <Route path="/" element={<Div objData={objData} ButtonData={ButtonData} userData={userData}></Div>}></Route>
+        <Route path="/comments" element={<Comments />}></Route>
+        <Route path="/feedback" element={<Feedback ButtonData={ButtonData} />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        </Route>
+        <Route path="/" element={<Private />}>
+        <Route path="/admin" element={<Admin />}></Route>
+        </Route>
+        <Route path="*" element={<NotFound />}/>
+      </Routes>
     </>
   );
 }
